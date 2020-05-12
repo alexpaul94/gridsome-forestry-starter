@@ -1,4 +1,30 @@
 ---
 label: Test
 hide_body: true
-fields: []
+fields:
+- name: sections
+  type: field_group_list
+  fields:
+  - name: section_title
+    type: text
+    config:
+      required: false
+    label: Section title
+  - name: section_content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Section content
+  - name: section_images
+    type: image_gallery
+    config: {}
+    label: Section images
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sections
