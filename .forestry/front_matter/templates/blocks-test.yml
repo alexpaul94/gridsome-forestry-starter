@@ -1,4 +1,14 @@
 ---
 label: Blocks Test
 hide_body: true
-fields: []
+fields:
+- name: blocks
+  type: blocks
+  label: blocks
+  template_types:
+  - project
+  - author
+  - theme-configuration
+  config:
+    min: 
+    max: 
